@@ -1,0 +1,11 @@
+create database dsec;
+use dsec;
+create table employee(id int,employeename varchar(30),dept varchar(30),salary int);
+insert into employee values(1,'varsha','IT',55000);
+insert into employee values(2,'ariharalingam','chemical',75000);
+insert into employee values(3,'harsih','civil',75000);
+insert into employee values(4,'ammai','IT',65000);
+select count(*) as total_employee from employee;
+select sum(salary) as total_salary from employee;
+select avg(salary) as total_salary from employee;
+select id as id,salary as employeesalary from employee;
